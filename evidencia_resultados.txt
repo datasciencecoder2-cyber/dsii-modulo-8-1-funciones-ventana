@@ -1,0 +1,46 @@
+DATA SCIENCE II | MODULO 8.1 | FUNCIONES DE VENTANA
+Pedidos originales: 15
+
+CONSULTA 1 | Filas: 15
+pedido_id | cliente_id | fecha | importe | categoria | promedio_gasto_cliente
+1 | 101 | 2023-01-02 | 100 | Electronica | 150.0
+3 | 101 | 2023-01-05 | 200 | Hogar | 150.0
+7 | 101 | 2023-02-03 | 250 | Electronica | 150.0
+12 | 101 | 2023-03-06 | 50 | Deportes | 150.0
+2 | 102 | 2023-01-02 | 500 | Electronica | 262.5
+... (10 filas adicionales)
+
+CONSULTA 2 | Filas: 15
+pedido_id | fecha | importe | ventas_acumuladas
+1 | 2023-01-02 | 100 | 100
+2 | 2023-01-02 | 500 | 600
+3 | 2023-01-05 | 200 | 800
+4 | 2023-01-07 | 300 | 1100
+5 | 2023-01-07 | 250 | 1350
+... (10 filas adicionales)
+
+CONSULTA 3 | Filas: 15
+pedido_id | cliente_id | fecha | importe | categoria | porcentaje_categoria
+4 | 103 | 2023-01-07 | 300 | Deportes | 66.67
+8 | 102 | 2023-02-03 | 100 | Deportes | 22.22
+12 | 101 | 2023-03-06 | 50 | Deportes | 11.11
+1 | 101 | 2023-01-02 | 100 | Electronica | 6.45
+2 | 102 | 2023-01-02 | 500 | Electronica | 32.26
+... (10 filas adicionales)
+
+EJECUCION FINALIZADA: OK
+
+PRUEBAS AUTOMATIZADAS
+test_01_tres_consultas_ejecutables (test_consultas.TestFuncionesVentana.test_01_tres_consultas_ejecutables) ... ok
+test_02_las_tres_conservan_todas_las_filas (test_consultas.TestFuncionesVentana.test_02_las_tres_conservan_todas_las_filas) ... ok
+test_03_promedio_por_cliente (test_consultas.TestFuncionesVentana.test_03_promedio_por_cliente) ... ok
+test_04_acumulado_con_desempate_por_id (test_consultas.TestFuncionesVentana.test_04_acumulado_con_desempate_por_id) ... ok
+test_05_porcentaje_por_categoria (test_consultas.TestFuncionesVentana.test_05_porcentaje_por_categoria) ... ok
+test_06_categoria_sin_ventas_no_divide_por_cero (test_consultas.TestFuncionesVentana.test_06_categoria_sin_ventas_no_divide_por_cero) ... ok
+test_07_uso_de_particiones_y_marco (test_consultas.TestFuncionesVentana.test_07_uso_de_particiones_y_marco) ... ok
+test_08_porcentajes_suman_100_por_categoria_con_ventas (test_consultas.TestFuncionesVentana.test_08_porcentajes_suman_100_por_categoria_con_ventas) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

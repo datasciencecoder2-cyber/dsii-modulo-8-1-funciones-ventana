@@ -1,0 +1,15 @@
+# Archivos compilados y temporales de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Bases generadas localmente (no se necesitan para reproducir la practica)
+*.db
+*.sqlite
+*.sqlite3
+
+# Entornos y configuracion local
+.venv/
+venv/
+.env
+.DS_Store
